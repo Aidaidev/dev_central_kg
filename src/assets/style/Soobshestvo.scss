@@ -1,244 +1,37 @@
-#soo {
-  .soo {
-    &-text {
-      display: flex;
-      align-items: center;
-      gap: 90px;
-      padding: 90px 0;
+#community {
+  .community {
+    &--telegram {
+      padding: 50px 0;
       h1 {
-        font-size: 20px;
-        line-height: normal;
-        font-family: sans-serif;
-        font-weight: 400;
-      }
-      button {
-        background: #6fcf97;
-        color: #fff;
-        display: inline-flex;
-        user-select: none;
-        font-weight: 700;
-        font-size: 14px;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 0.03em;
-        height: 38px;
-        line-height: 38px;
-        padding: 0 25px;
-        min-width: 145px;
-        text-decoration: none;
-        transition: all 0.2s;
-        border: none;
-        cursor: pointer;
-        outline: none;
-      }
-    }
-    &-telegram {
-      h1 {
-        flex: 1 1 100%;
         color: #a7b0c2;
+        padding-bottom: 20px;
         font-size: 24px;
         letter-spacing: 0.03em;
         font-weight: 700;
-        margin: 35px 0 25px;
       }
       &__blocks {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        a {
-          font-weight: 600;
-          color: #fff;
-          font-size: 20px;
-          background: #3ea2ff;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 150px;
-          padding-left: 20px;
-          display: inline-flex;
-          align-items: center;
-        }
-      }
-    }
-
-    .chatu {
-      h1 {
-        flex: 1 1 100%;
-        color: #a7b0c2;
-        font-size: 24px;
-        letter-spacing: 0.03em;
-        font-weight: 700;
-        margin: 35px 0 25px;
-      }
-      &-a {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
-        a {
-          .icon-tg {
-            font-size: 35px;
-            background: rgb(48, 137, 239);
-            height: 56px;
-            padding: 0 20px;
+        &--block {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          height: 55px;
+          right: 0;
+          background: rgb(74 165 220 / 98%);
+          color: #fff;
+          font-size: 16px;
+          span {
+            font-size: 22px;
+            color: white;
+            background-color: rgba(59, 145, 191, 0.98);
+            height: 100%;
+            width: 20%;
             display: flex;
             align-items: center;
+            justify-content: center;
           }
-          font-weight: 600;
-          color: #fff;
-          font-size: 17px;
-          background: #3ea2ff;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 80px;
-          display: inline-flex;
-          align-items: center;
-          gap: 24px;
-        }
-      }
-    }
-
-    .kanalu {
-      &-aa {
-        display: flex;
-        gap: 10px;
-        a {
-          .icon-tg {
-            font-size: 35px;
-            background: rgb(48, 137, 239);
-            height: 56px;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-          }
-          font-weight: 600;
-          color: #fff;
-          font-size: 17px;
-          background: #3ea2ff;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 80px;
-          display: inline-flex;
-          align-items: center;
-          gap: 24px;
-        }
-      }
-    }
-
-    .web {
-      &-e {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        a {
-          .icon-tg {
-            font-size: 35px;
-            background: rgb(83, 194, 105);
-            height: 56px;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-          }
-          font-weight: 600;
-          color: #fff;
-          font-size: 17px;
-          background: #77c86d;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 80px;
-          display: inline-flex;
-          align-items: center;
-          gap: 24px;
-        }
-      }
-    }
-
-    .face {
-      &-c {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        a {
-          .icon-tg {
-            font-size: 35px;
-            background: #35427b;
-            height: 56px;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-          }
-          font-weight: 600;
-          color: #fff;
-          font-size: 17px;
-          background: #647adf;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 80px;
-          display: inline-flex;
-          align-items: center;
-          gap: 24px;
-        }
-      }
-    }
-
-    .you {
-      &-u {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        a {
-          .icon-tg {
-            font-size: 35px;
-            background: #ec0000;
-            height: 56px;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-          }
-          font-weight: 600;
-          color: #fff;
-          font-size: 17px;
-          background: #df6464;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 80px;
-          display: inline-flex;
-          align-items: center;
-          gap: 24px;
-        }
-      }
-    }
-
-    .git {
-      &-t {
-        a {
-          .icon-tg {
-            font-size: 35px;
-            background: #211f1f;
-            height: 56px;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-          }
-          font-weight: 600;
-          color: #fff;
-          font-size: 17px;
-          background: #434242;
-          height: 56px;
-          text-decoration: none;
-          margin-bottom: 13px;
-          padding-right: 80px;
-          display: inline-flex;
-          align-items: center;
-          gap: 24px;
         }
       }
     }

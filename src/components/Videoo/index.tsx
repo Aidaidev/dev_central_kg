@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import VideoList from "./VideoList";
+import Loading from "../../Loading";
 
 function Videoo() {
   const meetups_url = "http://3.38.98.134/meetups";
@@ -9,7 +10,7 @@ function Videoo() {
   const { data, loading } = useFetch({ url: meetups_url });
 
   if (loading) {
-    return <div className="loading">Loading...</div>;
+    return <Loading />;
   }
 
   return (

@@ -2,13 +2,14 @@ import React from "react";
 import useFetch from "../../hooks/useFetch";
 import { Link } from "react-router-dom";
 import JobsList from "./JobsList";
+import Loading from "../../Loading";
 
 const Vacancy = () => {
   const { data, loading } = useFetch();
   console.log(data);
 
   if (loading) {
-    return <div className="loading">Loading...</div>;
+    return <Loading />;
   }
   return (
     <>

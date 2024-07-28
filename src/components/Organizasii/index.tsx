@@ -1,6 +1,7 @@
 import React from "react";
 import OrganizationList from "./OrganizationList";
 import useFetch from "../../hooks/useFetch";
+import Loading from "../../Loading";
 
 function Organizasii() {
   const { data, loading } = useFetch({
@@ -8,7 +9,7 @@ function Organizasii() {
   });
 
   if (loading) {
-    return <div className="loading">Loading...</div>;
+    return <Loading />;
   }
   console.log(data);
 

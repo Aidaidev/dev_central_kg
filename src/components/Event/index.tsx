@@ -1,4 +1,5 @@
 import useFetch from "../../hooks/useFetch";
+import Loading from "../../Loading";
 import EventList from "./EventList";
 
 function Events() {
@@ -8,7 +9,7 @@ function Events() {
   });
 
   if (loading) {
-    return <div className="loading">Loading...</div>;
+    return <Loading />;
   }
   return (
     <div id="events">
